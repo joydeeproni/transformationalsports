@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Scroll Animations & Parallax Effects
+   ========================================================================== */
+
+/* ── Scroll-triggered animation base ──────────────────────────────────────── */
+[data-animate] {
+  opacity: 0;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+/* ── Fade variants ────────────────────────────────────────────────────────── */
+[data-animate="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-animate="fade-down"] {
+  transform: translateY(-40px);
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(40px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(-40px);
+}
+
+[data-animate="fade"] {
+  transform: none;
+}
+
+[data-animate="zoom-in"] {
+  transform: scale(0.92);
+}
+
+[data-animate="zoom-out"] {
+  transform: scale(1.08);
+}
+
+/* ── Fold / Slide ─────────────────────────────────────────────────────────── */
+[data-animate="fold"] {
+  transform: perspective(800px) rotateX(8deg);
+  transform-origin: center top;
+}
+
+[data-animate="slide-up"] {
+  transform: translateY(60px);
+}
+
+[data-animate="slide-bottom"] {
+  transform: translateY(80px);
+}
+
+/* ── Stagger delays ───────────────────────────────────────────────────────── */
+[data-delay="100"] { transition-delay: 100ms; }
+[data-delay="200"] { transition-delay: 200ms; }
+[data-delay="300"] { transition-delay: 300ms; }
+[data-delay="400"] { transition-delay: 400ms; }
+[data-delay="500"] { transition-delay: 500ms; }
+[data-delay="600"] { transition-delay: 600ms; }
+[data-delay="700"] { transition-delay: 700ms; }
+[data-delay="800"] { transition-delay: 800ms; }
+
+/* ── Parallax container ───────────────────────────────────────────────────── */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* iOS doesn't support background-attachment: fixed */
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* ── Parallax layer (for JS-driven parallax) ──────────────────────────────── */
+.parallax-layer {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* ── Hero image subtle zoom on load ───────────────────────────────────────── */
+@keyframes heroZoom {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero-zoom {
+  animation: heroZoom 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Counter animation ────────────────────────────────────────────────────── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.counter-animate {
+  animation: countUp 0.6s ease-out forwards;
+}
+
+/* ── Subtle float for decorative elements ─────────────────────────────────── */
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* ── Slide-in for slider content ──────────────────────────────────────────── */
+@keyframes slideInContent {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-content-enter {
+  animation: slideInContent 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+  opacity: 0;
+}

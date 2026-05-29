@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <!-- Icon figures -->
+  <g transform="translate(10,10)">
+    <!-- Top left figure -->
+    <circle cx="22" cy="20" r="14" fill="#F5A623"/>
+    <path d="M8,55 Q22,35 36,55" fill="#1B4E5A"/>
+    <!-- Top right figure -->
+    <circle cx="58" cy="20" r="14" fill="#E8524A"/>
+    <path d="M44,55 Q58,35 72,55" fill="#1B4E5A"/>
+    <!-- Triangle -->
+    <polygon points="40,40 28,62 52,62" fill="#1AAB8A"/>
+    <!-- Bottom left figure -->
+    <path d="M8,65 L22,90 L0,90 Z" fill="#1B4E5A"/>
+    <path d="M22,65 L36,90 L8,90 Z" fill="#1B4E5A"/>
+    <!-- Bottom right figure -->
+    <path d="M44,65 L58,90 L36,90 Z" fill="#1B4E5A"/>
+    <path d="M58,65 L72,90 L44,90 Z" fill="#1B4E5A"/>
+  </g>
+  <!-- Text -->
+  <text x="100" y="50" font-family="sans-serif" font-weight="800" font-size="38" fill="#1B4E5A">VOLUNTEER</text>
+  <text x="100" y="90" font-family="sans-serif" font-weight="800" font-size="38" fill="#1B4E5A">FOR INDIA</text>
+</svg>
