@@ -6,6 +6,7 @@ import ProgramCard from '@/components/ProgramCard';
 
 export const metadata = {
   title: 'Programs | Transformational Sports',
+  alternates: { canonical: '/programs' },
 };
 
 const programs = [

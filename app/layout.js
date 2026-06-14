@@ -31,6 +31,7 @@ const klima = localFont({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.transformationalsports.org'),
   title: 'Transformational Sports',
   description:
     'Transformational Sports by Liz Haynes — empowering athletes and individuals through transformative coaching, mindset training, and holistic sports development.',

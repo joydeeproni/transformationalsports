@@ -7,6 +7,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'Fellowship & School Outreach Program | Transformational Sports',
+  alternates: { canonical: '/fellowship-school-outreach' },
 };
 
 const partnerOrgs = [

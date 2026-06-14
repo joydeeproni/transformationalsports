@@ -7,6 +7,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'Bridging the Gaps (BTG) | Transformational Sports',
+  alternates: { canonical: '/bridging-the-gaps' },
 };
 
 export default function BridgingTheGapsPage() {

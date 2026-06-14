@@ -10,6 +10,10 @@ import Counter from '@/components/Counter';
 import MailingListCTA from '@/components/MailingListCTA';
 import ScrollRevealText from '@/components/ScrollRevealText';
 
+export const metadata = {
+  alternates: { canonical: '/' },
+};
+
 export default function HomePage() {
   return (
     <>

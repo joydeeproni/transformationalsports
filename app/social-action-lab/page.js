@@ -8,6 +8,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'Social Action Lab | Transformational Sports',
+  alternates: { canonical: '/social-action-lab' },
 };
 
 const featureCards = [

@@ -6,6 +6,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'COVID-19 Relief | Transformational Sports',
+  alternates: { canonical: '/covid19-relief' },
 };
 
 const featureBoxes = [

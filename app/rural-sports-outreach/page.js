@@ -8,6 +8,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'Rural Sports Outreach | Transformational Sports',
+  alternates: { canonical: '/rural-sports-outreach' },
 };
 
 export default function RuralSportsOutreachPage() {

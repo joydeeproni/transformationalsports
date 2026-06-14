@@ -7,6 +7,7 @@ import MailingListCTA from '@/components/MailingListCTA';
 
 export const metadata = {
   title: 'Volunteer for India 2.0 | Transformational Sports',
+  alternates: { canonical: '/volunteer-for-india-2' },
 };
 
 export default function VolunteerForIndia2Page() {

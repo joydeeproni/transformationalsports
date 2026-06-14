@@ -5,6 +5,7 @@ import ScrollAnimator from '@/components/ScrollAnimator';
 
 export const metadata = {
   title: 'Contact Us | Transformational Sports',
+  alternates: { canonical: '/contact' },
 };
 
 /* ── Icons ──────────────────────────────────────────────────────────────── */
